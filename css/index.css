@@ -1,0 +1,474 @@
+html, body { 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 8em;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3em;
+}
+
+/*=========Header content========*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    background-color:rgb(38, 38, 38);  
+}
+
+/*logo*/
+.logo-placement{
+    flex: 25%;
+    height: 65px;
+}
+
+/*logo image*/
+#logo{
+    display: block;
+    width: 50px;
+    padding-top: 10px;
+    margin-left: 25%;
+    text-align: center;
+}
+
+/*burger*/
+.burger-box{
+    display: none;
+}
+
+/*navigation*/
+.navigation{
+    flex: 75%;
+    height: 65px;
+}
+
+.menu-links{
+    height: inherit;
+    margin: auto;
+    padding-right: 60px;
+    text-align: center;
+}
+
+.list-options{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+}
+
+.option{
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+    margin: 20px 30px;
+}
+
+.option-name{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.option-name:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.option-name::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(197, 197, 197);
+
+    position: absolute;
+    top:0;
+    width: 0;
+
+    transition: all ease-in-out 200ms;
+}
+
+.option-name:hover::before{
+    width: 100%;
+}
+
+/*==========Intro========*/
+
+/*background image*/
+.parallax{
+    background-image: url('../img/main.jpg');
+    background-blend-mode: multiply;
+    background-color: rgba(104, 104, 104, 0.747);
+    min-height: 560px;
+    max-height: 560px;
+    width: 100%;
+    padding: 15vh 0;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*========Title and quote=======*/
+.heading{
+    background-color:rgb(38, 38, 38);
+    text-align:center;
+    padding: 40px;
+    color:white;
+}
+.section-title{ 
+    font-size: 2.5em; 
+}
+.section-quote{ 
+    font-size: 1.5em; 
+}
+
+/*==========About Section==========*/
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.img-box{
+    flex: 50%;
+    height: inherit;
+    margin: auto;
+}
+
+#photo-me{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    width: 50%;
+}
+
+.about-me-paragraph{
+    flex: 50%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.about-paragraph{
+    text-align: justify;
+    vertical-align: middle;
+    overflow:auto;
+    line-height: 30px;
+    padding:20px 70px;
+    margin: 3px;
+}
+
+.github-link{
+    color: rgb(29, 149, 230);
+    text-decoration: none;
+}
+
+.skill-title{
+    text-align: center;
+    color: black;
+    font-weight: 300;
+    margin: auto;
+    font-size: 2em;
+}
+
+.skill-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 60px;
+}
+  
+.skill{
+    flex: 33.33%;
+    justify-content: space-around;
+}
+
+.skill-name{
+    color: #444;
+    text-align: center;
+    padding: 5px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+/*===========Portfolio Section=========*/
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.card{
+    flex: 33.33%;
+    max-width: 33.33%;
+    justify-content: space-around;
+}
+  
+.card-content {
+    height: 100%;
+    width: 75%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 10px;
+    text-align:center;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img{
+    width: 75%;
+    padding-top: 40px;
+}
+
+.card-button{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 5px;
+    width: 25%;
+    height: 30px;
+}
+
+.game-name{
+    padding-bottom:5px;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.description{
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.card-button:hover {
+    background-color: #555555;
+    color: white;
+} 
+
+.card-button:focus {
+    outline: 0;
+}
+
+footer{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(38, 38, 38);
+    padding: 60px 0;
+}
+
+.footer-content{
+    flex: 100%;
+    text-align: center;
+    color: white;
+}
+
+.icons{
+    font-size: 36px;
+    border: 2px solid white;
+    border-radius: 10%;
+    padding: 6px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.icons:hover{
+    color: black;
+    background-color: white;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*==========Nexus 5==========*/
+@media only screen and (min-width:360px) and (max-width:640px){
+    
+    /*===Header Content===*/
+    .logo-placement{
+        flex: 50%;
+        height: 65px;
+    }
+
+    .burger-box{
+        flex: 50%;
+        display: block;
+    }
+
+    .navigation{
+        flex: 100%;
+        height: 200px;
+        margin-top: 10px;
+        border-top: 1px solid white;
+        display: none;
+    }
+
+    .menu-links{
+        width: 100%;
+        padding: 0;
+    }
+
+    .list-options{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: inherit;
+        text-align: center;
+    }
+
+    .option{
+        width: 50%;
+    }
+
+    .icon {
+        color: white;
+        display: block;
+        font-size: 30px;
+        padding: 14px 25px;
+        text-align: right;
+    }
+    
+    h1{ 
+        font-size: 6em; 
+    }
+
+    .sub-title{
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    /*===About conentent===*/
+    .img-box{ 
+        flex:100%; 
+    }
+
+    .about-me-paragraph{
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-paragraph{
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        margin: 0;
+    }
+
+    /*===Portfolio content===*/
+    .card{
+        flex: 100% !important;
+        max-width: 100% !important;
+        justify-content: center !important;
+        margin-top: 50px;
+    }
+
+    .description{
+        padding: 5px 20px;
+    }
+
+    footer{
+        padding: 20px 0;
+    }
+}
+
+
+/*========== iPad ==========*/
+@media only screen and  (min-width:768px) and (max-width:1024px){
+   
+    h1{ 
+        font-size: 6em; 
+    }
+
+    .logo-placement{
+        flex: 25%;
+        height: 65px;
+    }
+
+    .menu-links{
+        width: 75%;
+        padding-right: 10px;
+        margin-right: 0;   
+    }
+
+    .list-options{
+        width: 100%;
+        padding: 0;
+        margin: auto;
+        height: inherit;
+        text-align: right;
+    }
+      
+    .icon {
+        color: white;
+        display: block;
+        font-size: 30px;
+        padding: 14px 25px;
+        text-align: right;
+    }
+
+    .sub-title{
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .img-box{ 
+        flex:100%; 
+    }
+
+    .about-me-paragraph{
+        margin: 0;
+        padding-bottom: 50px;
+        padding-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .about-paragraph{
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 0;
+        font-size: 1.3em;
+    }
+
+    /*Portfolio*/
+    .card{
+        flex: 100% !important;
+        max-width: 100% !important;
+        justify-content: center !important;
+        margin-top: 50px;
+    }
+
+    .game-name{
+        font-size: 2em;
+        padding: 0 20px;
+    }
+
+    .description{
+        font-size: 1.2em;
+        padding: 0 30px;
+    }
+
+    footer{
+        padding: 20px 0;
+    }  
+}
