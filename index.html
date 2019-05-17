@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jose Juarez - Portfolio</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Style Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--CSS files-->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header id="home">
+        <!-- Logo -->
+        <div class="logo-placement">
+            <img id="logo" src="img/logo.png" alt="logo">
+        </div>
+        <!-- burger only for mobile -->
+        <div class="burger-box" onclick="menu();">
+            <a class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- menu options -->
+        <div class="navigation">
+            <nav class="menu-links">
+                <ul class="list-options">
+                    <li class="option">
+                        <a class="option-name" href="#home">Home</a>
+                    </li>
+                    <li class="option">
+                        <a class="option-name" href="#about">About</a>
+                    </li>
+                    <li class="option">
+                        <a class="option-name" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--Intro-->
+        <section class="parallax">
+            <h1>Jose Juarez</h1>
+            <h2>front-end developer</h2>
+        </section>
+
+        <!--About Title-->
+        <section id="about">
+            <div class="heading">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-quote"><em>Always excited to learn, design and build new things</em></p>
+            </div>
+
+            <!--Content about me-->
+            <div class="about-container">
+                <div class="img-box">
+                    <img id="photo-me" src="img/me.jpg" alt="picture of me">
+                </div>
+
+                <div class="about-me-paragraph">
+                    <h2 class="skill-title">Who I'm I?</h2>
+                    <p class="about-paragraph">My name is Jose Juarez,
+                        I'm a Front-End Developer currently living in
+                        the Greater Toronto Area in Ontario Canada.
+                        Since I can remember my passion has been about
+                        creating art, I excelled at drawing and painting
+                        during my school years, then I found that I could
+                        create art using gimp and photoshop and make games
+                        using Unity following online tutorials, thanks to
+                        the many passionate people that write blogs and
+                        tutorials I've had the opportunity to enrich my
+                        knowledge in many areas of my interest, as well as to
+                        companies like Udacity, Coursera, Microsoft, Edx and
+                        Udemy where I have taken free courses about Html, css,
+                        JavaScript, Python and C# for beginners and intermediate levels,
+                        as well as courses about photography, film and acting.
+                        I've acquired my skills through online and self-driven
+                        education, and I strongly believe that both the present
+                        and the future will be a better world if we can bring more
+                        online education and training to anyone who aspires to be a
+                        productive member of society.
+                        If you want to know what I have been up to lately,
+                        take a look at my 
+                        <a class="github-link" href="https://github.com/JoseArmandoJuarez/" target="_blank">
+                            github!
+                        </a>
+                    </p>
+
+                    <!-- my skills -->
+                    <h2 class="skill-title">Skills</h2>
+                    <div class="skill-set">
+                        <div class="skill">
+                            <p class="skill-name">HTML</p>
+                        </div>
+                        <div class="skill">
+                            <p class="skill-name">CSS</p>
+                        </div>
+                        <div class="skill">
+                            <p class="skill-name">JavaScript</p>
+                        </div>
+                        <div class="skill">
+                            <p class="skill-name">JQuery</p>
+                        </div>
+                        <div class="skill">
+                            <p class="skill-name">Python</p>
+                        </div>
+                        <div class="skill">
+                            <p class="skill-name">Git | Github</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Projects / Portfolio-->
+        <section id="portfolio">
+            <div class="heading">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-quote"><em>These are my projects</em></p>
+            </div>
+
+            <div class="projects">
+                <!--Memory game-->
+                <div class="card">
+                    <div class="card-content">
+                        <img class="card-img" src="img/memory-game.png" alt="Memory Game">
+                        <h3 class="game-name">Classic Memory Game</h3>
+                        <p class="description">In this memory game I demonstrate my understanding of JavaScript and The
+                            DOM.</p>
+                        <button class="card-button">Start</button>
+                        <button class="card-button">Github</button>
+                    </div>
+                </div>
+                <!--Frogger game-->
+                <div class="card">
+                    <div class="card-content">
+                        <img class="card-img" src="img/frogger.png" alt="Frogger Game ">
+                        <h3 class="game-name">Frogger Game Clone</h3>
+                        <p class="description">In this app I demonstrate my understanding of Object-Oriented
+                            programming.</p>
+                        <button class="card-button">Start</button>
+                        <button class="card-button">Github</button>
+                    </div>
+                </div>
+                <!--Restaurant app-->
+                <div class="card">
+                    <div class="card-content">
+                        <img class="card-img" src="img/res2.png" alt="Restaurant">
+                        <h3 class="game-name">Restaurant Reviews App</h3>
+                        <p class="description">In this restaurant reviews app I demonstrate my understanding of Web
+                            Accessibility.</p>
+                        <button class="card-button">Start</button>
+                        <button class="card-button">Github</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <h4>&copy; Jose Juarez</h4>
+            <p><a class="links" href="mailto:josejuarez.ca@gmail.com">Email me</a></p>
+            <a class="links" href="https://www.linkedin.com/in/jose-armando-juarez-7310a5175/" target="_blank">
+                <i class="icons fa fa-linkedin"></i>
+            </a>
+            <a class="links" href="https://github.com/JoseArmandoJuarez/" target="_blank">
+                <i class="icons fa fa-github"></i>
+            </a>
+            <a class="links" href="https://twitter.com/jo5ejuarez" target="_blank">
+                <i class="icons fa fa-twitter"></i>
+            </a>
+            <a class="links" href="https://www.instagram.com/eljosejuarez/" target="_blank">
+                <i class="icons fa fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!--Script-->
+    <script src="js/index.js"></script>
+
+</body>
+</html>
